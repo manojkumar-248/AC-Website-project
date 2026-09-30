@@ -1,0 +1,718 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.weboverall {
+
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--============================
+-----------nav head  --========
+=============================---*/
+.head {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 98%;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.summa:hover{
+    
+   audio:frequencyBars(x,y)! important;
+}
+.head>input,
+label {
+    display: none;
+    font-size: 18px;
+}
+
+.logo {
+    padding: 17px 8px;
+    font-weight: bold;
+    ;
+}
+
+#checkbar:checked+.rightsubnav {
+    left: 0px;
+    /* background-color: brown; */
+
+}
+
+.owncheckbar {
+    width: 28px;
+    height: 21px;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.5px;
+}
+
+.owncheckbar span {
+    display: inline-block;
+    background-color: blue;
+
+    height: 3.4px;
+    width: 100%;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.owncheckbar span:nth-child(2) {
+    width: 75%;
+    height: 3px;
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(1) {
+    transform: rotate(43deg) translate(4px, 6px);
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(3) {
+    transform: rotate(-43deg) translate(4px, -7px);
+}
+
+#checkbar:checked~.rightsubnav {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rightsubnav {
+    display: flex;
+    align-items: center;
+}
+
+.rightsubnav>.links {
+    padding: 2px 14px;
+    transition: all 1.2s;
+}
+
+.rightsubnav>.links a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 1.4s;
+    position: relative;
+    /* color:black; */
+}
+
+/*---=============================
+==============-homme---=============    
+=================================-*/
+.home {
+    background-image: url("./image/lapandtabbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.home>.cnthome>h1,
+.cnthome>p,
+.cnthome>.btn {
+    font-weight: 745;
+}
+
+/*---=============================
+===========-about us ---==========
+=================================-*/
+.aboutus {
+    scroll-margin: 200px;
+    width: 98%;
+    color: black;
+}
+
+.abt-main {
+    height: 88vh;
+    /* position:relative; */
+}
+
+
+.abt-left {
+    background-color: brown;
+    margin: 0px;
+    position: relative;
+    height: 100%;
+    align-self: center;
+}
+
+.abtimg-1,
+.abtimg-2 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+.abt-left,
+.abtimgov-1,
+.abtsub-left {
+    padding: 0px !important;
+}
+
+.abtsub-left {
+    align-self: end;
+}
+
+.abtsub-left>h3 {
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    font-size: 36px;
+}
+
+.abtimgov-2 {
+    height: 63%;
+    width: 51%;
+    position: absolute;
+    top: 11.5%;
+}
+
+/*--------about right cotnent-------*/
+.abt-right {
+    background-color: tomato;
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.abttxt-right {
+    display: flex;
+    flex-direction: column;
+    /* gap:3px; */
+}
+
+.abttxt-right .line {
+    width: 39px;
+    height: 3.8px;
+}
+
+.abttxt-p {
+
+
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.abttxt-h6 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 2px;
+}
+
+.piller-overall {
+    row-gap: 14px;
+
+}
+
+.piller-1,
+.piller-2,
+.piller-3 {
+    width: 145px;
+}
+
+/*-------what we do--------*/
+.wwd-section {
+    min-height: 75vh;
+}
+
+.wwd-overall {
+    row-gap: 14px;
+
+}
+
+.wwd-overall p {
+    padding: 0px 8px;
+}
+
+.wwd-1,
+.wwd-2,
+.wwd-3,
+.wwd-4 {
+    border-radius: 12px;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    width: 190px;
+    height: 308px;
+
+}
+
+.wwd-icon {
+    font-size: 36px;
+    ;
+}
+
+
+/*---=============================
+===========-reviews section ---==========
+=================================-*/
+.review-section {
+    min-height: 100vh;
+    contain: paint;
+    padding:45px 0px;
+}
+
+.heading-review p {
+    font-size: 14px;
+    padding-top: 2px;
+    
+}
+
+.review-row1{
+    max-width:100%;
+    contain: paint;
+    padding:28px 0px;
+    /* overflow: hidden; */
+}
+
+.review-track-1 {
+    width:max-content;
+    display: flex;
+    align-items: center;
+    /* contain: paint; */
+    gap: 28px;
+    animation: x-scroll-1 13s linear;
+    animation-iteration-count: infinite;
+
+   
+}
+.review-track-2 {
+    width:max-content;
+    display: flex;
+    align-items: center;
+    /* contain: paint; */
+    gap: 28px;
+    animation: x-scroll-2 14s linear;
+    animation-iteration-count: infinite;
+    margin-top:39px;
+
+   
+}
+.review-track-1:hover{
+    animation-play-state: paused;
+}
+.review-track-2:hover{
+    animation-play-state: paused;
+}
+.box {
+    height: 240px;
+
+    /* width: 360px; */
+    /* background-color: antiquewhite; */
+    position: relative;
+    flex: 0 0 360px;
+
+}
+
+
+.review-name {
+    position: absolute;
+}
+
+.div-clip {
+    width: 100%;
+    height: 100%;
+
+    background-color: blue;
+    clip-path: path("M 20,0 L 340,0 A 20,20 0 0 1 360,20 L 360,145 A 20,20 0 0 1 340,165 L 210,165 A 20,20 0 0 0 190,185 L 190,200 A 20,20 0 0 1 170,220 L 20,220 A 20,20 0 0 1 0,200 L 0,20 A 20,20 0 0 1 20,0 Z");
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 36px 56px 10px 16px;
+}
+.dc-1{
+       background-color: rgb(69, 160, 245) !important;
+}
+.dc-2{
+        background-image: linear-gradient(to right, rgb(221, 215, 215),  rgb(69, 160, 245) 90%) !important;
+}
+.dc-2 i{
+    position: absolute;
+    bottom: 50px;
+    left:19px;
+}
+.div-clip h5 {
+    line-height: 28px;
+    word-spacing: 3px;
+}
+.review-name {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    position: absolute;
+    bottom:9%;
+    right:10%;
+}
+
+.review-name span:first-child{
+    padding:22px 22px;
+    background-color: gainsboro;
+    border-radius: 3px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+
+
+
+
+/*---=============================
+===========-our plan section ---==========
+=================================-*/
+.op-section {
+    min-height: 80vh;
+    width:100%;
+    scroll-margin:200px;
+}
+
+.plan-1 {
+    width: 219px;
+    color: black;
+    height: 345px;
+    background-image: linear-gradient(to bottom, white 1%, grey);
+}
+
+.plan-2 {
+    color: white;
+    width: 228px;
+    height: 345px;
+    justify-content: end !important;
+    background-image: linear-gradient(to bottom, white 1%, blue);
+    position: relative;
+    transform: scale(1.1);
+}
+
+.plan-3 {
+    width: 219px;
+    color: black;
+    height: 345px;
+    background-image: linear-gradient(to bottom, white 1%, grey);
+
+}
+
+.plan-ops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 16px;
+    ;
+}
+
+.plan-1 h2 span,
+.plan-2 h2 span,
+.plan-3 h2 span {
+    font-size: 17px;
+    text-decoration: line-through;
+    color: rgb(78, 77, 77);
+}
+
+.ops-detail p {
+    margin: 0px;
+    font-size: 13.8px;
+    font-weight: 600;
+}
+
+.ops-detail i {
+    font-size: 13px;
+}
+
+.plan-1 i,
+.plan-3 i {
+    color: rgb(5, 5, 91)
+}
+
+.ops-bt {
+    border-radius: 5px;
+    color: black !important;
+    font-weight: bolder;
+}
+
+.plan-2 .ops-bt {
+
+    font-size: 18px;
+    padding-right: 34px !important;
+    padding-left: 30px !important;
+    ;
+}
+
+.plan-2>span:first-child {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.plan-2>h5 {
+    font-size: 22px;
+}
+
+/*---=============================
+===========-schedule a visit section ---==========
+=================================-*/
+.sav-section {
+    scroll-margin: 66px;
+}
+
+.sav-img {
+    width: 400px;
+    height: 319px;
+}
+
+.sav-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-sav {
+    background-color: aquamarine;
+    padding: 22px 12.8px 28px;
+    border-radius: 8px;
+
+}
+
+.form-right .row {
+    --bs-gutter-x: 0rem;
+}
+
+.select-input,
+.data-input {
+    width: 45.9%;
+}
+
+.form-control,
+.form-select {
+    padding-top: 9.4px;
+    padding-bottom: 9.4px;
+    color: rgba(0, 0, 0, 0.657);
+}
+
+
+/*-----------------review track animation----------------*/
+@keyframes x-scroll-1 {
+    0% {
+        transform: translateX(2%);
+    }
+
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+@keyframes x-scroll-2 {
+    0% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(2%);
+    }
+}
+
+
+/*---=============================
+===========-footersection ---==========
+=================================-*/
+.footer-last {
+    min-height: 74vh;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.icon-ctt {
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+.contact-foot p {
+    margin: 0px;
+}
+
+
+
+@media only screen and (min-width:576px) and (max-width:994px) {
+    .head>label {
+        display: flex;
+
+    }
+
+    .head .rightsubnav {
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 45px;
+        padding-bottom: 14px;
+        border-radius: 12px;
+        font-size: 19px;
+        left: 120%;
+        color: white;
+        background-color: transparent;
+        backdrop-filter: blur(5px) brightness(120%);
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    /*------about us ------*/
+    .abt-left {
+        width: 600px !important;
+        margin: auto;
+    }
+
+    .abt-main {
+        height: auto;
+        min-height: 80vh;
+
+    }
+
+    .abtimgov-2 {
+
+        width: 51%;
+        top: 11.8%;
+    }
+
+
+
+    /*--------saav---------*/
+    .select-input,
+    .data-input {
+        width: 100%;
+    }
+
+    .sav-img {
+        justify-self: center
+    }
+
+    .ops-row {
+        display: flex;
+        gap:22px;
+        row-gap: 31px;;
+    }
+    .plan-2 {
+    
+    transform: scale(1);
+}    .plan-ops{
+        width: 231px;
+    height: 345px;
+    }
+
+
+}
+
+@media only screen and (min-width:300px) and (max-width:576px) {
+    .head>label {
+        display: flex;
+
+    }
+
+    .head .rightsubnav {
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 45px;
+        padding-bottom: 13px;
+        border-radius: 12px;
+        font-size: 19px;
+        left: 120%;
+        color: white;
+        background-color: transparent;
+        backdrop-filter: blur(5px) brightness(120%);
+
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    /*------home-----*/
+    .home {
+        background-image: url("./image/mobilebg.png");
+    }
+
+    .cnthome {
+        align-self: start;
+        padding-top: 115px;
+
+    }
+
+
+    /*----about us */
+    .abtimgov-2 {
+        /* height: 63%; */
+        width: 56%;
+        position: absolute;
+        top: 12%;
+    }
+
+    .abt-main {
+        height: auto;
+        min-height: 80vh;
+        /* position:relative; */
+    }
+
+    .abtsub-left>h3,
+    .abtsub-left>h6 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+
+    /*--------saav---------*/
+    .select-input,
+    .data-input {
+        width: 100%;
+    }
+
+    .sav-img {
+        width: 298px;
+        height: 270px;
+    }
+
+    .ops-row {
+        flex-direction: column;
+    }
+    .plan-2 {
+    
+    transform: scale(1);
+}
+    .plan-ops{
+        width: 231px;
+    height: 345px;
+    }
+}
